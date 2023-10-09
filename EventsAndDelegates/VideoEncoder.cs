@@ -7,6 +7,9 @@
         // 2. Define an event based on that delegate
         public event VideoEncodedEventHandler VideoEncoded;
 
+        // Instead 1. and 2.
+        //public event EventHandler<VideoEventArgs> VideoEncoded;
+
         public void Encode(Video video)
         {
             Console.WriteLine("Encode video...");
