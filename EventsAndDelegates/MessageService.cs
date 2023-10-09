@@ -2,9 +2,9 @@
 {
     public class MessageService
     {
-        public void OnVideoEncoded(object source, EventArgs e)
+        public void OnVideoEncoded(object source, VideoEventArgs e)
         {
-            Console.WriteLine("Sending Message...");
+            Console.WriteLine("Sending Message... " + e.Video.Title);
         }
     }
 }

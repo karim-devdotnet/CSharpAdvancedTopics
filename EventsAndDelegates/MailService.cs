@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EventsAndDelegates
+﻿namespace EventsAndDelegates
 {
     public class MailService
     {
-        public void OnVideoEncoded(object source, EventArgs e)
+        public void OnVideoEncoded(object source, VideoEventArgs e)
         {
-            Console.WriteLine("Sending Mail...");
+            Console.WriteLine("Sending Mail... " + e.Video.Title);
         }
     }
 }
